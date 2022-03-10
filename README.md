@@ -9,7 +9,7 @@ Docker is an open platform for developing, shipping, and running applications. D
 1. Clone docker inside your PHP project:
 
     ```
-        git clone git@bitbucket.org:nldanang/mtb-deploy.git
+        git clone 
     ```
 
 2. Enter the deploy/docker folder and rename env-example to .env.
