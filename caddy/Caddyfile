@@ -1,6 +1,6 @@
 # Docs: https://caddyserver.com/docs/caddyfile
-https://admin.htv.dev {
-    root /var/www/htv/htv-admin/public
+https://admin.test.dev {
+    root /var/www/docker/test-admin/public
     fastcgi / php-fpm:9000 php {
         index index.php
     }

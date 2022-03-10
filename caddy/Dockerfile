@@ -8,6 +8,6 @@ RUN caddyplug install ${plugins}
 
 EXPOSE 80 443 2015
 
-WORKDIR /var/www/htv/htv-admin/public
+WORKDIR /var/www/
 
 CMD ["/usr/bin/caddy", "-conf", "/etc/Caddyfile"]
