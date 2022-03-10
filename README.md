@@ -12,7 +12,7 @@ Docker is an open platform for developing, shipping, and running applications. D
         git clone git@bitbucket.org:nldanang/mtb-deploy.git
     ```
 
-2. Enter the htv-deploy/docker folder and rename env-example to .env.
+2. Enter the deploy/docker folder and rename env-example to .env.
 
     ```
         cp env-example .env
@@ -31,7 +31,7 @@ Docker is an open platform for developing, shipping, and running applications. D
         DB_CONNECTION=pgsql
         DB_HOST=postgres
         DB_PORT=5432
-        DB_USERNAME=htv
+        DB_USERNAME=user
         DB_PASSWORD=secret
         #Redis
         REDIS_HOST=redis
@@ -91,7 +91,7 @@ Docker is an open platform for developing, shipping, and running applications. D
 - Build the enviroment and run it using docker-compose
 
     ```
-        docker-compose up -d nginx postgres redis
+        docker-compose up -d
     ```
 
 - Enter the Workspace container, to execute commands like (Artisan, Composer, Gulp, …)
@@ -114,7 +114,7 @@ Docker is an open platform for developing, shipping, and running applications. D
         DB_CONNECTION=pgsql
         DB_HOST=postgres
         DB_PORT=5432
-        DB_USERNAME=htv
+        DB_USERNAME=user
         DB_PASSWORD=secret
         
         REDIS_HOST=redis
@@ -221,22 +221,22 @@ Docker is an open platform for developing, shipping, and running applications. D
 1. To go Caddy Folders and Edit CaddyFile
 
 
-        $root@server:/var/www/htv/htv-docker# cd caddy
-        $root@server:/var/www/htv/htv-docker/caddy# vim Caddyfile
+        $root@server:/var/www/docker/docker# cd caddy
+        $root@server:/var/www/docket/docker/caddy# vim Caddyfile
 
 
-2. Remove https://admin.htv.dev
+2. Remove https://admin.test.dev
 
     ```
-        https://admin.htv.dev
-        root /var/www/htv/htv-admin/public
+        https://admin.test.dev
+        root /var/www/
     ```
 
 3. And replace with your https://yourdomain.com
     
     ```
         https://yourdomain.com
-        root /var/www/htv/htv-admin/public
+        root /var/www/docket/test-admin/public
     ```
 
 4. Run Your Caddy Container
